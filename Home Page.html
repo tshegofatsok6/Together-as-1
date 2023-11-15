@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="C:\Users\Tshegofatso Khubayi\Desktop\ASSIGNMRNTS\ST10107380 WED PART 3 T.KHUBAYI\JQUERY\main.js"></script>
+    <title>Home page</title>
+</head>
+
+<body>
+    <img src="photos/LOGO.jpeg" alt="company logo" width="600px" height="200">
+    <div id="date"></div>
+
+    <script>
+        $(document).ready(function () {
+            function formatDate(date) {
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                return date.toLocaleDateString('en-US', options);
+            }
+            const customDate = new Date('2024-11-02');
+            const formattedDate = formatDate(customDate);
+            $('#date').text('date: ' + formattedDate);
+        });
+    </script>
+
+    <h1>TOGETHER AS 1 FOUNDATION </h1>
+    <h2>"Building a better tomorrow one brick at a time"</h2>
+
+    <p>Together As 1 is a construction organization made up of a group of contractors/construction companies in the Northern region of South Africa with a shared goal of creating a better community and overall society for disabled people.
+        Our team is compiled of 12 esteemed construction companies with over 10 years of experience in the construction market building unique and elegant homes for homeowners and are now doing the same for the disabled. We pride ourselves in collaborating and doing things Together As 1 because we believe in the spirit of ubuntu.
+
+        Together As 1's work is made possible through a 5% annual injection from all of our construction companies, government assistance, and donations to create personalized homes with great accessibility and easy-use overall functionality according to the needs of our clients.
+        Our organization uses state-of-the-art construction technology to create the best-suited home for our clients cost-efficiently and without compromising quality. Our goal is to build no fewer than 120 homes per year to provide proper housing to at least 78% of the disabled community within the next 10-15 years.
+        We have set this challenging goal for ourselves and our investors because we feel that we as a society have not been doing enough for the disabled, be it because of a lack of resources or a lack of knowledge. We seek to change that by providing them with housing that makes their lives and ultimately our lives better.
+    </p>
+    <h3> TO GET OUR WEEKLY NEWSLETTER CLICK BELOW:</h3>;
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPmjVUuqfZERnqVtnyKtnQ1y_cRu65-rnMjv9_uGm0odCxUw/viewform?usp=pp_url">Newsletter Signup</a>
+
+    <nav>
+        <ul>
+            <li><strong>Home</strong></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="Our work.html">Our work </a></li>
+            <li><a href="Photo gallery.html">Photo gallery</a></li>
+            <li><a href="Get Involved.html">Enquiries/Application</a></li>
+            <li><a href="Contact Us.html">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

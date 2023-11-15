@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css>
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>If you feel you need to speak to one of our representatives for any sort of inquiries, please feel free to contact us or visit our head office. Find details below.</p>
+    
+    <h2>Physical Address</h2>
+    <p>Regent <br>
+        Polokwane 0700 <br>
+        Landros Mare 0699 <br>
+    </p>
+    
+    <h3>Telephone Numbers</h3>
+    <p>Landline: 011 807 7210 <br>
+        Cell Number: 060 306 1849 <br>
+    </p>
+    
+    <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="About Us.asp">About Us</a></li>
+        <li><a href="Our Work.asp">Our Work</a></li>
+        <li><a href="Photo Gallery.asp">Photo Gallery</a></li>
+        <li><a href="Get Involved.asp">Get Involved</a></li>
+        <li><a href="Contact Us.asp">Contact Us</a></li>
+    </ul>
+
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(23.907602, 29.454007),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <!-- Replace 'YOUR_KEY' with your actual Google Maps API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
+<footer>
+    <p><a href="mailto:tshegok643@gmail.com">tshegok643@gmail.com</a></p>
+</footer>
+</html>
